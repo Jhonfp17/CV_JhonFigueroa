@@ -1,0 +1,391 @@
+/*=========================
+    RESET GENERAL
+==========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#d8d8d8;
+    font-family:'Montserrat',sans-serif;
+    display:flex;
+    justify-content:center;
+    padding:40px 0;
+}
+
+/*=========================
+    HOJA A4
+==========================*/
+
+.contenedor{
+    width:210mm;
+    min-height:297mm;
+    background:#fff;
+    display:grid;
+    grid-template-columns:32% 68%;
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+}
+
+/*=========================
+    SIDEBAR
+==========================*/
+
+.sidebar{
+    background:#d6d6d6;
+    padding:35px 28px;
+}
+
+.foto{
+    display:flex;
+    justify-content:center;
+    margin-bottom:30px;
+}
+
+.foto img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:8px solid white;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.sidebar section{
+    margin-bottom:35px;
+}
+
+.sidebar h2{
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:8px;
+    color:#111;
+    letter-spacing:1px;
+}
+
+.linea{
+    width:100%;
+    height:3px;
+    background:#111;
+    margin-bottom:18px;
+}
+
+.sidebar p{
+    font-size:14px;
+    color:#333;
+    line-height:1.7;
+    text-align:justify;
+}
+
+/*=========================
+CONTACTO
+==========================*/
+
+.dato{
+    display:flex;
+    align-items:center;
+    margin-bottom:18px;
+}
+
+.dato i{
+    width:35px;
+    font-size:18px;
+    color:#000;
+}
+
+.dato span{
+    font-size:14px;
+    color:#222;
+}
+
+/*=========================
+HABILIDADES
+==========================*/
+
+.skill{
+    margin-bottom:18px;
+}
+
+.skill span{
+    display:block;
+    margin-bottom:6px;
+    font-size:14px;
+    font-weight:500;
+}
+
+.barra{
+    width:100%;
+    height:9px;
+    background:#bfbfbf;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.nivel{
+    height:100%;
+    background:#222;
+    border-radius:30px;
+}
+
+/* PORCENTAJES */
+
+.n95{
+    width:95%;
+}
+
+.n90{
+    width:90%;
+}
+
+.n85{
+    width:85%;
+}
+
+.n80{
+    width:80%;
+}
+
+.n75{
+    width:75%;
+}
+
+.n70{
+    width:70%;
+}
+
+.n65{
+    width:65%;
+}
+
+.n60{
+    width:60%;
+}
+
+/*=========================
+CONTENIDO
+==========================*/
+
+.contenido{
+    padding:45px;
+}
+
+.encabezado{
+    margin-bottom:40px;
+}
+
+.encabezado h1{
+    font-size:42px;
+    line-height:1.1;
+    color:#111;
+    font-weight:300;
+}
+
+.encabezado h1 span{
+    display:block;
+    font-weight:800;
+}
+
+.encabezado p{
+    margin-top:12px;
+    color:#666;
+    font-size:18px;
+    letter-spacing:1px;
+}
+
+/*=========================
+TITULOS
+==========================*/
+
+.titulo{
+    font-size:20px;
+    margin-bottom:18px;
+    padding-bottom:8px;
+    border-bottom:3px solid #111;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+/*=========================
+EXPERIENCIA
+==========================*/
+
+.experiencia{
+    margin-bottom:35px;
+}
+
+.experiencia h3{
+    font-size:18px;
+    color:#222;
+    margin-bottom:6px;
+}
+
+.experiencia h4{
+    font-size:14px;
+    color:#777;
+    margin-bottom:15px;
+}
+
+.experiencia ul{
+    padding-left:22px;
+}
+
+.experiencia li{
+    margin-bottom:8px;
+    line-height:1.7;
+    color:#444;
+    font-size:15px;
+}
+
+.resumen{
+    margin-top:18px;
+    line-height:1.8;
+    text-align:justify;
+    color:#444;
+}
+
+/*=========================
+FORMACION
+==========================*/
+
+.formacion{
+    margin-bottom:25px;
+}
+
+.formacion h3{
+    font-size:17px;
+    color:#222;
+    margin-bottom:5px;
+}
+
+.formacion p{
+    color:#666;
+    font-size:15px;
+}
+
+/*=========================
+TECNOLOGIAS
+==========================*/
+
+.tecnologias{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:35px;
+}
+
+.tecnologias span{
+    background:#111;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    transition:.3s;
+}
+
+.tecnologias span:hover{
+    background:#666;
+}
+
+/*=========================
+REFERENCIAS
+==========================*/
+
+.referencias{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.referencia{
+    background:#f4f4f4;
+    padding:20px;
+    border-left:5px solid #111;
+}
+
+.referencia h3{
+    margin-bottom:8px;
+    color:#111;
+}
+
+.referencia p{
+    margin-bottom:10px;
+    color:#555;
+}
+
+.referencia span{
+    font-weight:700;
+    color:#000;
+}
+
+/*=========================
+HOVER
+==========================*/
+
+.referencia:hover{
+    transform:translateY(-5px);
+    transition:.3s;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.skill:hover .nivel{
+    background:#4d4d4d;
+}
+
+/*=========================
+RESPONSIVE
+==========================*/
+
+@media(max-width:900px){
+
+    .contenedor{
+
+        width:100%;
+        grid-template-columns:1fr;
+
+    }
+
+    .contenido{
+
+        padding:30px;
+
+    }
+
+    .sidebar{
+
+        padding:30px;
+
+    }
+
+    .referencias{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .encabezado h1{
+
+        font-size:34px;
+
+    }
+
+}
+
+@media print{
+
+    body{
+
+        background:white;
+        padding:0;
+
+    }
+
+    .contenedor{
+
+        width:100%;
+        box-shadow:none;
+
+    }
+
+}
