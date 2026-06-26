@@ -1,6 +1,6 @@
-/*=========================
-    RESET GENERAL
-==========================*/
+/* =========================
+   RESET
+========================= */
 
 *{
     margin:0;
@@ -9,16 +9,16 @@
 }
 
 body{
-    background:#d8d8d8;
     font-family:'Montserrat',sans-serif;
+    background:#d9d9d9;
     display:flex;
     justify-content:center;
-    padding:40px 0;
+    padding:30px 0;
 }
 
-/*=========================
-    HOJA A4
-==========================*/
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
 
 .contenedor{
     width:210mm;
@@ -26,366 +26,222 @@ body{
     background:#fff;
     display:grid;
     grid-template-columns:32% 68%;
-    box-shadow:0 5px 20px rgba(0,0,0,.25);
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
 }
 
-/*=========================
-    SIDEBAR
-==========================*/
+/* =========================
+   SIDEBAR IZQUIERDA
+========================= */
 
 .sidebar{
     background:#d6d6d6;
-    padding:35px 28px;
+    padding:30px 25px;
 }
 
 .foto{
     display:flex;
     justify-content:center;
-    margin-bottom:30px;
+    margin-bottom:25px;
 }
 
 .foto img{
-    width:180px;
-    height:180px;
+    width:160px;
+    height:160px;
     border-radius:50%;
     object-fit:cover;
-    border:8px solid white;
-    box-shadow:0 0 10px rgba(0,0,0,.2);
+    border:6px solid #fff;
 }
 
-.sidebar section{
-    margin-bottom:35px;
-}
+/* TITULOS SIDEBAR */
 
 .sidebar h2{
-    font-size:18px;
-    font-weight:700;
-    margin-bottom:8px;
-    color:#111;
-    letter-spacing:1px;
+    font-size:16px;
+    font-weight:800;
+    margin-top:20px;
 }
 
 .linea{
     width:100%;
-    height:3px;
+    height:2px;
     background:#111;
-    margin-bottom:18px;
+    margin:8px 0 15px;
 }
 
 .sidebar p{
-    font-size:14px;
+    font-size:13px;
     color:#333;
-    line-height:1.7;
-    text-align:justify;
+    line-height:1.6;
 }
 
-/*=========================
-CONTACTO
-==========================*/
+/* CONTACTO */
 
 .dato{
     display:flex;
     align-items:center;
-    margin-bottom:18px;
+    margin-bottom:12px;
+    font-size:13px;
 }
 
 .dato i{
-    width:35px;
-    font-size:18px;
-    color:#000;
+    margin-right:10px;
+    color:#111;
 }
 
-.dato span{
-    font-size:14px;
-    color:#222;
-}
-
-/*=========================
-HABILIDADES
-==========================*/
+/* =========================
+   HABILIDADES BARRAS
+========================= */
 
 .skill{
-    margin-bottom:18px;
+    margin-bottom:12px;
 }
 
 .skill span{
+    font-size:13px;
     display:block;
-    margin-bottom:6px;
-    font-size:14px;
-    font-weight:500;
+    margin-bottom:5px;
 }
 
 .barra{
     width:100%;
-    height:9px;
+    height:7px;
     background:#bfbfbf;
-    border-radius:30px;
-    overflow:hidden;
+    border-radius:20px;
 }
 
 .nivel{
     height:100%;
-    background:#222;
-    border-radius:30px;
+    background:#111;
+    border-radius:20px;
 }
 
-/* PORCENTAJES */
+.n95{width:95%;}
+.n90{width:90%;}
+.n85{width:85%;}
+.n80{width:80%;}
+.n75{width:75%;}
+.n60{width:60%;}
 
-.n95{
-    width:95%;
-}
-
-.n90{
-    width:90%;
-}
-
-.n85{
-    width:85%;
-}
-
-.n80{
-    width:80%;
-}
-
-.n75{
-    width:75%;
-}
-
-.n70{
-    width:70%;
-}
-
-.n65{
-    width:65%;
-}
-
-.n60{
-    width:60%;
-}
-
-/*=========================
-CONTENIDO
-==========================*/
+/* =========================
+   CONTENIDO DERECHO
+========================= */
 
 .contenido{
-    padding:45px;
-}
-
-.encabezado{
-    margin-bottom:40px;
+    padding:40px;
 }
 
 .encabezado h1{
-    font-size:42px;
-    line-height:1.1;
-    color:#111;
-    font-weight:300;
-}
-
-.encabezado h1 span{
-    display:block;
+    font-size:28px;
     font-weight:800;
+    line-height:1.2;
 }
 
 .encabezado p{
-    margin-top:12px;
     color:#666;
-    font-size:18px;
-    letter-spacing:1px;
+    margin-top:5px;
 }
 
-/*=========================
-TITULOS
-==========================*/
+/* =========================
+   TITULOS SECCIONES
+========================= */
 
 .titulo{
-    font-size:20px;
-    margin-bottom:18px;
-    padding-bottom:8px;
-    border-bottom:3px solid #111;
-    font-weight:700;
-    letter-spacing:1px;
+    font-size:16px;
+    font-weight:800;
+    margin:25px 0 10px;
+    padding-bottom:5px;
+    border-bottom:2px solid #111;
 }
 
-/*=========================
-EXPERIENCIA
-==========================*/
-
-.experiencia{
-    margin-bottom:35px;
-}
+/* =========================
+   EXPERIENCIA
+========================= */
 
 .experiencia h3{
-    font-size:18px;
-    color:#222;
-    margin-bottom:6px;
+    font-size:14px;
+    font-weight:800;
 }
 
 .experiencia h4{
-    font-size:14px;
+    font-size:12px;
     color:#777;
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
 .experiencia ul{
-    padding-left:22px;
+    padding-left:18px;
 }
 
 .experiencia li{
-    margin-bottom:8px;
-    line-height:1.7;
-    color:#444;
-    font-size:15px;
+    font-size:12px;
+    margin-bottom:6px;
+    color:#333;
 }
 
 .resumen{
-    margin-top:18px;
-    line-height:1.8;
-    text-align:justify;
+    font-size:12px;
+    margin-top:10px;
     color:#444;
 }
 
-/*=========================
-FORMACION
-==========================*/
+/* =========================
+   FORMACIÓN
+========================= */
 
 .formacion{
-    margin-bottom:25px;
+    margin-bottom:12px;
 }
 
 .formacion h3{
-    font-size:17px;
-    color:#222;
-    margin-bottom:5px;
+    font-size:13px;
+    font-weight:700;
 }
 
 .formacion p{
+    font-size:12px;
     color:#666;
-    font-size:15px;
 }
 
-/*=========================
-TECNOLOGIAS
-==========================*/
-
-.tecnologias{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-    margin-bottom:35px;
-}
+/* =========================
+   CONOCIMIENTOS
+========================= */
 
 .tecnologias span{
+    display:inline-block;
     background:#111;
     color:#fff;
-    padding:8px 18px;
-    border-radius:30px;
-    font-size:14px;
-    transition:.3s;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:11px;
+    margin:3px;
 }
 
-.tecnologias span:hover{
-    background:#666;
-}
-
-/*=========================
-REFERENCIAS
-==========================*/
+/* =========================
+   REFERENCIAS
+========================= */
 
 .referencias{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:25px;
+    gap:15px;
 }
 
 .referencia{
-    background:#f4f4f4;
-    padding:20px;
-    border-left:5px solid #111;
+    border:1px solid #ddd;
+    padding:10px;
+    font-size:12px;
 }
 
-.referencia h3{
-    margin-bottom:8px;
-    color:#111;
-}
-
-.referencia p{
-    margin-bottom:10px;
-    color:#555;
-}
-
-.referencia span{
-    font-weight:700;
-    color:#000;
-}
-
-/*=========================
-HOVER
-==========================*/
-
-.referencia:hover{
-    transform:translateY(-5px);
-    transition:.3s;
-    box-shadow:0 10px 20px rgba(0,0,0,.15);
-}
-
-.skill:hover .nivel{
-    background:#4d4d4d;
-}
-
-/*=========================
-RESPONSIVE
-==========================*/
+/* =========================
+   RESPONSIVE
+========================= */
 
 @media(max-width:900px){
-
     .contenedor{
-
         width:100%;
         grid-template-columns:1fr;
-
-    }
-
-    .contenido{
-
-        padding:30px;
-
     }
 
     .sidebar{
-
-        padding:30px;
-
+        text-align:center;
     }
-
-    .referencias{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .encabezado h1{
-
-        font-size:34px;
-
-    }
-
-}
-
-@media print{
-
-    body{
-
-        background:white;
-        padding:0;
-
-    }
-
-    .contenedor{
-
-        width:100%;
-        box-shadow:none;
-
-    }
-
 }
